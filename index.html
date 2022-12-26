@@ -9,6 +9,10 @@
     </style>
   </head>
   <body>
+    <header>
+      <img src="images/coursera1.svg" alt="Coursera Image" id="header_img" width="213" height="126">
+      <h1 id="top">Coursera Test Site</h1>
+    </header>
     <nav>
       <ul>
         <li><a href="#section1" class="nav_a">SITE INFO</a></li>
@@ -17,66 +21,68 @@
         <li><a href="#section4" class="nav_a">JS</a></li>
       </ul>
     </nav>
-    <header>
-      <img src="images/coursera1.svg" alt="Coursera Image" id="header_img" width="213" height="126">
-      <h1 id="top">Coursera Test Site</h1>
-    </header>
-    <section id="section1">
-      <h2>Site Purpose</h2>
-      <p>This is a test site I intend to use to test various functionality I learn in the Coursera HTML/CSS/JS course.</p>
-    </section>
-    <section id="section2">
-      <div id="html_head"><h2>HTML</h2></div>
-      <div id="html_description">
-        <p>HTML is a markup language that communicates the structure of a page to a browser. HTML uses tags to communicate elements of the page. Tags used include</p>
-        <ul>
-          <li><span class="tag">&lt;!DOCTYPE&gt;</span>: Used to describe the type of markup used by the document. If omitted, the page may behave unpredictably.</li>
-          <li><span class="tag">&lt;html&gt;</span>: Wraps the entire website code after doctype. This tells the browser where the site begins and ends</li>
-          <li><span class="tag">&lt;head&gt;</span>: Provides loading and pre-rendering information about the page, like the title and metadata.</li>
-          <li><span class="tag">&lt;body&gt;</span>: This wraps all of the code that a visitor will see.</li>
-          <li><span class="tag">&lt;a&gt;</span>: anchor. Provides a link to other webpages or sections of an article.</li>
-          <li><span class="tag">&lt;h1&gt;</span> - <span class="tag">&lt;h6&gt;</span>: Headings. These distinguish relative importance of sections of text.</li>
-          <li>
-            Semantic tags
-            <ul>
-              <li><span class="tag">&lt;header&gt;</span>: Typical header of a document.</li>
-              <li><span class="tag">&lt;section&gt;</span>: Distinguishes various sections of a document</li>
-              <li><span class="tag">&lt;article&gt;</span>: Stand alone article within a section.</li>
-              <li><span class="tag">&lt;aside&gt;</span>: Used to give additional information about something.</li>
-              <li><span class="tag">&lt;nav&gt;</span>: Navigation section of a document.</li>
-              <li><span class="tag">&lt;footer&gt;</span>: Standard footer of a document.</li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <section id="section3">
-      <div id="css_head"><h2>CSS</h2></div>
-      <div id="css_description">
-        <p>Cascading Stylesheets (CSS) describe the styling of a page. The style tells the browser how everything should look and how elements fit together. Stylesheets uses <i>CSS rules</i> to describe the style of each element of the page. These rules are made up of the following.</p>
-        <div id="rule_anatomy">
-          <div id="css_selector">Selector <span class="bracket">{</span></div>
-          <div id="css_declaration">declaration;</div>
-          <div class="bracket">}</div>
-          <div id="declaration_explanation">
-            <div>The declaration is made of a <span id="css_property">property</span> and a <span id="css_value">value.</span></div>
-            <div id="css_property_explanation">
-              Properties are the attributes of a selector that can be modified. Some common properties include
+    <div id="fill_box"></div>
+    <main>
+      <section id="section1">
+        <h2>Site Purpose</h2>
+        <p>This is a test site I intend to use to test various functionality I learn in the Coursera HTML/CSS/JS course.</p>
+      </section>
+      <section id="section2">
+        <div id="html_head"><h2>HTML</h2></div>
+        <div id="html_description">
+          <p><i>Hyper Text Markup Language</i> (HTML) is a markup language that communicates the structure of a page to a browser. HTML uses tags to communicate elements of the page. Tags used include</p>
+          <ul>
+            <li><span class="tag">&lt;!DOCTYPE&gt;</span>: Used to describe the type of markup used by the document. If omitted, the page may behave unpredictably.</li>
+            <li><span class="tag">&lt;html&gt;</span>: Wraps the entire website code after doctype. This tells the browser where the site begins and ends</li>
+            <li><span class="tag">&lt;head&gt;</span>: Provides loading and pre-rendering information about the page, like the title and metadata.</li>
+            <li><span class="tag">&lt;body&gt;</span>: This wraps all of the code that a visitor will see.</li>
+            <li><span class="tag">&lt;a&gt;</span>: anchor. Provides a link to other webpages or sections of an article.</li>
+            <li><span class="tag">&lt;h1&gt;</span> - <span class="tag">&lt;h6&gt;</span>: Headings. These distinguish relative importance of sections of text.</li>
+            <li><span class="tag">semantic tags</span>:</li>
+            <li>
               <ul>
-                <li><span id="css_property">background-color:</span> The color that appears behind the text of an element.</li>
-                <li><span id="css_property">color:</span> Text color.</li>
-                <li><span id="css_property">border:</span> Element border.</li>
-                <li><span id="css_property">font-family:</span> Text font.</li>
+                <li><span class="tag">&lt;header&gt;</span>: Typical header of a document.</li>
+                <li><span class="tag">&lt;section&gt;</span>: Distinguishes various sections of a document</li>
+                <li><span class="tag">&lt;article&gt;</span>: Stand alone article within a section.</li>
+                <li><span class="tag">&lt;aside&gt;</span>: Used to give additional information about something.</li>
+                <li><span class="tag">&lt;nav&gt;</span>: Navigation section of a document.</li>
+                <li><span class="tag">&lt;footer&gt;</span>: Standard footer of a document.</li>
               </ul>
-              A more comprehensive list of CSS properties can be found on the <a href="https://www.w3schools.com/cssref/index.php" target="_blank">W3Schools.com&nbsp;CSS&nbsp;Reference</a> page.
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="section3">
+        <div id="css_head"><h2>CSS</h2></div>
+        <div id="css_description">
+          <p><i>Cascading Stylesheets</i> (CSS) describe the styling of a page. The style tells the browser how everything should look and how elements fit together. Stylesheets uses <i>CSS rules</i> to describe the style of each element of the page. These rules are made up of the following.</p>
+          <div id="rule_anatomy">
+            <div id="css_selector">Selector <span class="bracket">{</span></div>
+            <div id="css_declaration">declaration;</div>
+            <div class="bracket">}</div>
+          </div>
+          <div id="declaration_explanation">
+            <div><p>The declaration is made of a <span class="css_property">property</span> and a <span id="css_value">value.</span></p></div>
+            <div id="css_property_explanation">
+              <p>Properties are the attributes of a selector that can be modified. Some common properties include</p>
+              <ul>
+                <li><span class="css_property">background-color:</span> The color that appears behind the text of an element.</li>
+                <li><span class="css_property">color:</span> Text color.</li>
+                <li><span class="css_property">border:</span> Element border.</li>
+                <li><span class="css_property">font-family:</span> Text font.</li>
+              </ul>
+              <p>A more comprehensive list of CSS properties can be found on the <a href="https://www.w3schools.com/cssref/index.php" target="_blank">W3Schools.com&nbsp;CSS&nbsp;Reference</a> page.</p>
             </div>
             <div id="css_value_explanation"></div>
           </div>
         </div>
-      </div>
-    </section>
-    <section id="section4">
-      <div id="js_head"><h2>JavaScript</h2></div>
-    </section>
+      </section>
+      <section id="section4">
+        <div id="js_head"><h2>JavaScript</h2></div>
+      </section>
+    </main>
+    <footer></footer>
+    <div id="viewing_window"></div>
+    <div id="right_wall"></div>
   </body>
 </html>
