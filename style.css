@@ -1,6 +1,8 @@
 /* General elements */
 body {
-    background-color: black;
+    margin: 0px;
+    padding: 0px;
+    background-color: #00001d;
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
     color: lightblue;
@@ -12,12 +14,12 @@ h1, h2{
 
 h1 {
     font-size: 40px;
-    text-shadow: 0px 0px 5px yellow, 0px 0px 10px red;
+    text-shadow: 0px 0px 5px #ffff00, 0px 0px 10px #ff0000;
 }
 
 h2 {
     font-size: 24px;
-    text-shadow: 1px 1px 2px teal, 2px 2px 5px blue;
+    text-shadow: 1px 1px 2px #008080, 2px 2px 5px blue;
 }
 
 p {
@@ -25,19 +27,19 @@ p {
 }
 
 i {
-    color: teal;
+    color: #008080;
 }
 
 a:link, a:visited {
     text-decoration: none;
-    color: green;
+    color: #008000;
     font-weight: bold;
     border: 0px;
 }
 
 a:hover {
     cursor: default;
-    color: lightgreen;
+    color: #90ee90;
     text-shadow: 0px 0px 5px white;
     font-size: 22px;
 }
@@ -55,42 +57,43 @@ nav li {
 
 .nav_a:link, .nav_a:visited {
     display: block;
+    border-radius: 5px;
     text-align: center;
     font-size: calc(1vh + 7px);
     padding: calc(1% + 3vh);
-    background-color: gray;
-    color: blue;
-    text-shadow: 0px 0px 2px white;
+    background-color: #808080;
+    color: #0000ff;
+    text-shadow: 0px 0px 2px #ffffff;
     text-decoration: overline underline;
     border: 4px solid;
-    border-left-color: white;
-    border-top-color: white;
-    border-bottom-color: darkslategray;
-    border-right-color: darkslategray;
+    border-left-color: #ffffff;
+    border-top-color: #ffffff;
+    border-bottom-color: #474747;
+    border-right-color: #474747;
     margin-bottom: 3vh;
     width: 50%;
 }
 
 .nav_a:hover {
-    box-shadow: 0px 0px 10px orange;
-    background-color: yellow;
-    border-left-color: white;
-    border-top-color: white;
-    border-bottom-color: darkgoldenrod;
-    border-right-color: darkgoldenrod;
+    box-shadow: 0px 0px 10px #ffae00;
+    background-color: #ffff00;
+    border-left-color: #ffffff;
+    border-top-color: #ffffff;
+    border-bottom-color: #b8860b;
+    border-right-color: #b8860b;
     color:white;
-    text-shadow: 1px 1px 2px red, 2px 2px 5px black;
+    text-shadow: 1px 1px 2px #ff0000, 2px 2px 5px #000000;
 }
 
 .nav_a:active {
     background-color: yellow;
     box-shadow: 0px 0px 20px red;
-    border-left-color: darkgoldenrod;
-    border-top-color: darkgoldenrod;
-    border-bottom-color: white;
-    border-right-color: white;
-    color:white;
-    text-shadow: -1px -1px 2px black, -2px -2px 5px red;
+    border-left-color: #b8860b;
+    border-top-color: #b8860b;
+    border-bottom-color: #ffffff;
+    border-right-color: #ffffff;
+    color: #ffffff;
+    text-shadow: -1px -1px 2px #000000, -2px -2px 5px #ff0000;
 }
 
 .tag {
@@ -101,13 +104,13 @@ nav li {
 
 .bracket {
     font-family: Consolas, 'Courier New', monospace;
-    color: yellow;
+    color: #ffff00;
     font-weight: bold;
 }
 
 .css_property {
     font-family: Consolas, 'Courier New', monospace;
-    color: lightyellow;
+    color: #ffff80;
     font-weight: bold;
 }
 
@@ -121,7 +124,7 @@ nav li {
 
 #css_declaration {
     font-family: Consolas, 'Courier New', monospace;
-    color: green;
+    color: #008000;
     font-weight: bold;
     margin-left: 10px;
 }
@@ -139,8 +142,8 @@ header {
     left: 15%;
     opacity: 100%;
     text-align: center;
-    background-color: rgb(0, 0, 30);
-    z-index: 3;
+    background-color: #00001d;
+    z-index: 2;
 }
 
 nav {
@@ -149,8 +152,8 @@ nav {
     height: 100%;
     top: 30%;
     left: 0%;
-    background-color: rgb(0, 0, 30);
-    z-index: 3;
+    background-color: #00001d;
+    z-index: 2;
 }
 
 #fill_box {
@@ -159,8 +162,8 @@ nav {
     height: 30%;
     top: 0%;
     left: 0%;
-    background-color: rgb(0, 0, 30);
-    z-index: 3;
+    background-color: #00001d;
+    z-index: 2;
 }
 
 main {
@@ -177,6 +180,38 @@ main {
     height: 100%;
     top: 0%;
     left: 85%;
-    background-color: rgb(0, 0, 30);
+    background-color: #00001d;
+    z-index: 3;
+}
+
+/* viewing window bars */
+
+#left_bar {
+    position: fixed;
+    height: 70%;
+    width: 5px;
+    background-color: #c0c0c0;
+    top: 30%;
+    left: 15%;
+    z-index: 3;
+}
+
+#right_bar {
+    position: fixed;
+    height: 70%;
+    width: 5px;
+    background-color: #c0c0c0;
+    top: 30%;
+    left: 85%;
+    z-index: 3;
+}
+
+#top_bar {
+    position: fixed;
+    height: 5px;
+    width: 70%;
+    background-color: #c0c0c0;
+    top: 30%;
+    left: 15%;
     z-index: 3;
 }
