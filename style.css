@@ -140,7 +140,7 @@ header {
     opacity: 100%;
     text-align: center;
     background-color: rgb(0, 0, 30);
-    z-index: 2;
+    z-index: 3;
 }
 
 nav {
@@ -150,7 +150,7 @@ nav {
     top: 30%;
     left: 0%;
     background-color: rgb(0, 0, 30);
-    z-index: 2;
+    z-index: 3;
 }
 
 #fill_box {
@@ -160,7 +160,7 @@ nav {
     top: 0%;
     left: 0%;
     background-color: rgb(0, 0, 30);
-    z-index: 2;
+    z-index: 3;
 }
 
 main {
@@ -171,17 +171,6 @@ main {
     z-index: 1;
 }
 
-#viewing_window {
-    position: fixed;
-    width: 70%;
-    height: 70%;
-    top: 30%;
-    left: 15%;
-    border: 5px double silver;
-    border-bottom: none;
-    z-index: 3
-}
-
 #right_wall {
     position: fixed;
     width: 15%;
@@ -189,4 +178,5 @@ main {
     top: 0%;
     left: 85%;
     background-color: rgb(0, 0, 30);
+    z-index: 3;
 }
