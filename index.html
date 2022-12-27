@@ -27,7 +27,7 @@
       <section id="section1">
         <h2>Site Information</h2>
         <p>This is a test site I intend to use to test various functionality I learn in the Coursera HTML/CSS/JS course.</p>
-        <p>As of <time>12/26/2022</time> there so no support for mobile devices. This page is an ongoing work. If you have stumbled on this page and would like to offer feedback, the github pag is <a href="https://github.com/jdcirbo/coursera-test" target="_blank">here</a>.</p>
+        <p>This page is an ongoing work. If you have stumbled on this page and would like to offer feedback, the github page is <a href="https://github.com/jdcirbo/coursera-test" target="_blank">here</a>.</p>
       </section>
       <section id="section2">
         <div id="html_head"><h2>HTML</h2></div>
@@ -52,6 +52,7 @@
               </ul>
             </li>
           </ul>
+          <p>For a more comprehensive list of HTML tags, visit the <a href="https://www.w3schools.com/TAGS/default.asp" target="_blank">W3Schools&nbsp;HTML&nbsp;Element&nbsp;Reference</a> page.</p>
         </div>
       </section>
       <section id="section3">
@@ -59,8 +60,8 @@
         <div id="css_description">
           <p><i>Cascading Stylesheets</i> (CSS) describe the styling of a page. The style tells the browser how everything should look and how elements fit together. Stylesheets uses <i>CSS rules</i> to describe the style of each element of the page. These rules are made up of the following.</p>
           <div id="rule_anatomy">
-            <div id="css_selector">Selector <span class="bracket">{</span></div>
-            <div id="css_declaration">declaration;</div>
+            <div class="css_selector">Selector <span class="bracket">{</span></div>
+            <div class="css_declaration">declaration;</div>
             <div class="bracket">}</div>
           </div>
           <div id="declaration_explanation">
@@ -68,7 +69,7 @@
             <div id="css_property_explanation">
               <p>Properties are the attributes of a selector that can be modified. Some common properties include</p>
               <ul>
-                <li><span class="css_property">background-color:</span> The color that appears behind the text of an element.</li>
+                <li><span class="css_property">background:</span> Background properties of an element. Used to set color, image, and repeat.</li>
                 <li><span class="css_property">color:</span> Text color.</li>
                 <li><span class="css_property">border:</span> Element border.</li>
                 <li><span class="css_property">font-family:</span> Text font.</li>
@@ -77,6 +78,14 @@
             </div>
             <div id="css_value_explanation"></div>
           </div>
+          <p>There are different ways to specify when a rule applies to an element. Here are a few examples.</p>
+          <ul>
+            <li>Single Selector: <span class="css_selector">selector</span><span class="bracket">{ ... }</span>:</li>
+            <li>Child Selector: <span class="css_selector">parent > child</span><span class="bracket">{ ... }</span>: Rules only apply to <i>child</i> elements that are immediate descendants of <i>parent</i> elements.</li>
+            <li>Descendant Selector: <span class="css_selector">parent descendant</span><span class="bracket">{ ... }</span>: Rules only apply to <i>descendant</i> elements that are descendants of <i>parent</i> elements at any level.</li>
+            <li>Class Selector: <span class="css_selector">.myclass</span><span class="bracket">{ ... }</span>: Rules only apply to elements that contain the <i>myclass</i> class property.</li>
+            <li>ID Selector: <span class="css_selector">#myid</span><span class="bracket">{ ... }</span>: Rules only apply to the element with the unique ID <i>myid</i>. <aside>Note that each ID may only be used once.</aside></li>
+          </ul>
         </div>
       </section>
       <section id="section4">

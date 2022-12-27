@@ -1,5 +1,11 @@
+/* Reset Browser Style */
+* {
+    box-sizing: border-box;
+}
+
 /* General elements */
 body {
+    text-align: justify;
     margin: 0px;
     padding: 0px;
     background-color: #00001d;
@@ -23,7 +29,7 @@ h2 {
 }
 
 p {
-    margin-left: 5%;
+    text-justify:inter-cluster;
 }
 
 i {
@@ -53,11 +59,16 @@ nav li {
     margin-left: 0%;
 }
 
+section {
+    padding: 5%;
+}
+
+
 /* Classes */
 
 .nav_a:link, .nav_a:visited {
     display: block;
-    border-radius: 5px;
+    border-radius: 100px;
     text-align: center;
     font-size: calc(1vh + 7px);
     padding: calc(1% + 3vh);
@@ -71,7 +82,7 @@ nav li {
     border-bottom-color: #474747;
     border-right-color: #474747;
     margin-bottom: 3vh;
-    width: 50%;
+    width: 75%;
 }
 
 .nav_a:hover {
@@ -108,6 +119,19 @@ nav li {
     font-weight: bold;
 }
 
+.css_selector {
+    font-family: Consolas, 'Courier New', monospace;
+    color: pink;
+    font-weight: bold;
+}
+
+.css_declaration {
+    font-family: Consolas, 'Courier New', monospace;
+    color: #008000;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
 .css_property {
     font-family: Consolas, 'Courier New', monospace;
     color: #ffff80;
@@ -116,102 +140,111 @@ nav li {
 
 /* IDs */
 
-#css_selector {
-    font-family: Consolas, 'Courier New', monospace;
-    color: pink;
-    font-weight: bold;
-}
-
-#css_declaration {
-    font-family: Consolas, 'Courier New', monospace;
-    color: #008000;
-    font-weight: bold;
-    margin-left: 10px;
-}
-
 #rule_anatomy {
     margin-left: 40%;
 }
+/********************/
+/* Layout Structure */
+/********************/
 
-/* Box Structures */
-header {
-    position: fixed;
-    width: 70%;
-    height: 30%;
-    top: 0%;
-    left: 15%;
-    opacity: 100%;
-    text-align: center;
-    background-color: #00001d;
-    z-index: 2;
+/* Mobile */
+@media (max-width: 991px) {
+    header {
+        visibility: hidden;
+    }
+
+    nav {
+        visibility: hidden;
+    }
+
+    main {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
 }
 
-nav {
-    position: fixed;
-    width: 15%;
-    height: 100%;
-    top: 30%;
-    left: 0%;
-    background-color: #00001d;
-    z-index: 2;
-}
+/* Large Devices */
+@media (min-width: 1200px) {
+    header {
+        position: fixed;
+        width: 70%;
+        height: 30%;
+        top: 0%;
+        left: 15%;
+        opacity: 100%;
+        text-align: center;
+        background-color: #00001d;
+        z-index: 2;
+    }
 
-#fill_box {
-    position: fixed;
-    width: 15%;
-    height: 30%;
-    top: 0%;
-    left: 0%;
-    background-color: #00001d;
-    z-index: 2;
-}
+    nav {
+        position: fixed;
+        width: 15%;
+        height: 100%;
+        top: 30%;
+        left: 0%;
+        background-color: #00001d;
+        z-index: 2;
+    }
 
-main {
-    position: absolute;
-    width: 70%;
-    top:30%;
-    left:15%;
-    z-index: 1;
-}
+    #fill_box {
+        position: fixed;
+        width: 15%;
+        height: 30%;
+        top: 0%;
+        left: 0%;
+        background-color: #00001d;
+        z-index: 2;
+    }
 
-#right_wall {
-    position: fixed;
-    width: 15%;
-    height: 100%;
-    top: 0%;
-    left: 85%;
-    background-color: #00001d;
-    z-index: 3;
-}
+    main {
+        position: absolute;
+        width: 70%;
+        top:30%;
+        left:15%;
+        z-index: 1;
+    }
 
-/* viewing window bars */
+    #right_wall {
+        position: fixed;
+        width: 15%;
+        height: 100%;
+        top: 0%;
+        left: 85%;
+        background-color: #00001d;
+        z-index: 3;
+    }
 
-#left_bar {
-    position: fixed;
-    height: 70%;
-    width: 5px;
-    background-color: #c0c0c0;
-    top: 30%;
-    left: 15%;
-    z-index: 3;
-}
+    /* viewing window bars */
 
-#right_bar {
-    position: fixed;
-    height: 70%;
-    width: 5px;
-    background-color: #c0c0c0;
-    top: 30%;
-    left: 85%;
-    z-index: 3;
-}
+    #left_bar {
+        position: fixed;
+        height: 70%;
+        width: 5px;
+        background-color: #c0c0c0;
+        top: 30%;
+        left: 15%;
+        z-index: 3;
+    }
 
-#top_bar {
-    position: fixed;
-    height: 5px;
-    width: 70%;
-    background-color: #c0c0c0;
-    top: 30%;
-    left: 15%;
-    z-index: 3;
+    #right_bar {
+        position: fixed;
+        height: 70%;
+        width: 5px;
+        background-color: #c0c0c0;
+        top: 30%;
+        left: 85%;
+        z-index: 3;
+    }
+
+    #top_bar {
+        position: fixed;
+        height: 5px;
+        width: 70%;
+        background-color: #c0c0c0;
+        top: 30%;
+        left: 15%;
+        z-index: 3;
+    }
 }
