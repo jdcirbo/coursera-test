@@ -5,7 +5,6 @@
 
 /* General elements */
 body {
-    text-align: justify;
     margin: 0px;
     padding: 0px;
     background-color: #00001d;
@@ -29,7 +28,7 @@ h2 {
 }
 
 p {
-    text-justify:inter-cluster;
+    clear: both;
 }
 
 i {
@@ -51,8 +50,18 @@ a:hover {
 }
 
 li {
-    margin-left: 5%;
     list-style: none;
+}
+
+section li {
+    position: relative;
+    left: 8.33%;
+    margin: 1%;
+    float: left;
+    width: 33.33%;
+    border: 2px solid #052080;
+    background-color: #052080;
+    border-radius: 3px;
 }
 
 nav li {
@@ -60,7 +69,14 @@ nav li {
 }
 
 section {
-    padding: 5%;
+    position: relative;
+    padding: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 50px;
+    left: 16.67%;
+    width: 75%;
+    clear: both;
 }
 
 
@@ -138,6 +154,11 @@ section {
     font-weight: bold;
 }
 
+.center {
+    text-align: center;
+    clear: both;
+}
+
 /* IDs */
 
 #rule_anatomy {
@@ -168,10 +189,10 @@ section {
 @media (min-width: 1200px) {
     header {
         position: fixed;
-        width: 70%;
+        width: 66.67%;
         height: 30%;
         top: 0%;
-        left: 15%;
+        left: 16.67%;
         opacity: 100%;
         text-align: center;
         background-color: #00001d;
@@ -180,7 +201,7 @@ section {
 
     nav {
         position: fixed;
-        width: 15%;
+        width: 16.67%;
         height: 100%;
         top: 30%;
         left: 0%;
@@ -190,7 +211,7 @@ section {
 
     #fill_box {
         position: fixed;
-        width: 15%;
+        width: 16.67%;
         height: 30%;
         top: 0%;
         left: 0%;
@@ -200,18 +221,18 @@ section {
 
     main {
         position: absolute;
-        width: 70%;
+        width: 66.67%;
         top:30%;
-        left:15%;
+        left:16.67%;
         z-index: 1;
     }
 
     #right_wall {
         position: fixed;
-        width: 15%;
+        width: 16.67%;
         height: 100%;
         top: 0%;
-        left: 85%;
+        left: 83.33%;
         background-color: #00001d;
         z-index: 3;
     }
@@ -224,7 +245,7 @@ section {
         width: 5px;
         background-color: #c0c0c0;
         top: 30%;
-        left: 15%;
+        left: 16.67%;
         z-index: 3;
     }
 
@@ -234,17 +255,17 @@ section {
         width: 5px;
         background-color: #c0c0c0;
         top: 30%;
-        left: 85%;
+        left: 83.33%;
         z-index: 3;
     }
 
     #top_bar {
         position: fixed;
         height: 5px;
-        width: 70%;
+        width: 66.67%;
         background-color: #c0c0c0;
         top: 30%;
-        left: 15%;
+        left: 16.67%;
         z-index: 3;
     }
 }
