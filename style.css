@@ -177,6 +177,11 @@ section {
         top: 0px;
         left: 0px;
     }
+
+    ul {
+        margin-left: -40px;
+    }
+
     section li {
         clear:both;
         left: 0%;
